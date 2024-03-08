@@ -8,13 +8,13 @@ export default function Navbar() {
       <div className="flex items-end justify-evenly h-full px-60">
         <img className="border rounded-xl w-28 h-28" src={Logo} alt="logo" />
         <div className="text-3xl font-medium font-serif text-">
-          <Link to={'/'}>Home</Link>
+          <Link to={'/'}>Pagina Principal</Link>
         </div>
         <div className="text-3xl font-medium font-serif">
         <Link to={'/servicios'}>Servicios</Link>
         </div>
         <div className="text-3xl font-medium font-serif">
-        <Link to={'/about-me'}>About Me</Link>
+        <Link to={'/about-me'}>Acerca De Mi</Link>
           </div>
         <div className="text-3xl font-medium font-serif">
         <Link to={'/portafolio'}>Portafolio</Link>
