@@ -5,7 +5,7 @@ import instagram from "../img/instagram.svg";
 export default function ButtonContactInstagramFacebook() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center font-serif animate-bounce">
+      <div className="flex flex-col items-center justify-center font-serif ">
         <button className="bg-slate-400 rounded-lg text-2xl w-96 h-10  hover:bg-slate-600 hover:text-cyan-200 ">
           ¡Comunicate con nosotros!
         </button>
