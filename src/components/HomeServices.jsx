@@ -32,31 +32,36 @@ export default function HomeServices() {
   ];
 
   return (
-    <div className="flex flex-wrap items-center justify-around h-[40rem] w-full bg-neutral-800 text-white">
-      {servicios.map((servicio) => (
-        <div
-          className="w-72 h-[30rem] border border-white rounded-lg my-1 mx-1 bg-neutral-500"
-          key={servicio.id}
-        >
-          <div>
-            <img
-              className="object-cover h-56 w-96 border-b"
-              src={servicio.image}
-              alt={servicio.titulo}
-            />
+    <div className="bg-[#1d239bce]">
+      <h1 className="text-5xl font-semibold italic text-center pt-4">
+          ¡Explora la Diversidad de Nuestros Servicios Especializados!
+        </h1>
+      <div className="flex items-center justify-around h-[36rem] w-full  text-white ">
+        {servicios.map((servicio) => (
+          <div
+            className="w-72 h-[30rem] border border-white rounded-lg my-1 mx-1 bg-slate-500"
+            key={servicio.id}
+          >
+            <div>
+              <img
+                className="object-cover h-56 w-96 border-b"
+                src={servicio.image}
+                alt={servicio.titulo}
+              />
+            </div>
+            <div className="flex justify-center items-center h-36 ">
+              <h1 className="text-4xl text-center text-wrap bg-clip-text text-transparent bg-gradient-to-r from-teal-600  to-[#a5c8ca] font-extrabold">
+                {servicio.titulo}
+              </h1>
+            </div>
+            <div className="flex items-center justify-center my-8">
+              <button className="w-64 bg-cyan-200 mb-4 rounded-lg text-2xl text-black p-2 hover:bg-cyan-500 hover:text-white">
+                {servicio.contentButton}...
+              </button>
+            </div>
           </div>
-          <div className="flex justify-center items-center h-36 ">
-            <h1 className="text-4xl text-center text-wrap bg-clip-text text-transparent bg-gradient-to-r from-teal-600  to-[#a5c8ca] font-extrabold">
-              {servicio.titulo}
-            </h1>
-          </div>
-          <div className="flex items-center justify-center my-8">
-            <button className="w-64 bg-cyan-200 mb-4 rounded-lg text-2xl text-black p-2 hover:bg-cyan-500 hover:text-white">
-              {servicio.contentButton}...
-            </button>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import image1 from "../assets/2220.jpg";
-import image2 from "../assets/563.jpg";
-import image3 from "../assets/2834.jpg";
+//import image1 from "../assets/2220.jpg";
+//import image2 from "../assets/563.jpg";
+//import image3 from "../assets/2834.jpg";
 
 export default function SectionHome({ image }) {
   const images = [
@@ -25,10 +25,11 @@ export default function SectionHome({ image }) {
     <section className="flex w-full justify-center bg-[#a5c8ca] pt-5">
       <ImageGallery
         items={images}
-        slideInterval={5000}
+        slideInterval={7000}
         showPlayButton={false}
         showThumbnails={false}
         showBullets={true}
+        showFullscreenButton={false}
       />
     </section>
   );
