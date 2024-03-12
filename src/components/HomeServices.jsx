@@ -32,14 +32,14 @@ export default function HomeServices() {
   ];
 
   return (
-    <div className="bg-[#1d239bce]">
+    <div className="bg-gradient-to-b from-[#a5c8ca] to-gray-900 ">
       <h1 className="text-5xl font-semibold italic text-center pt-4">
           ¡Explora la Diversidad de Nuestros Servicios Especializados!
         </h1>
       <div className="flex items-center justify-around h-[36rem] w-full  text-white ">
         {servicios.map((servicio) => (
           <div
-            className="w-72 h-[30rem] border border-white rounded-lg my-1 mx-1 bg-slate-500"
+            className="w-72 h-[30rem] border border-white rounded-lg my-1 mx-1 bg-slate-700"
             key={servicio.id}
           >
             <div>
